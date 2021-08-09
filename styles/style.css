@@ -1,0 +1,35 @@
+/***********************************************************
+**
+**    Title:      style.css
+**    Project:    
+**    Author:     Joe Cohen
+**    Contact:    <deskofjoe@gmail.com>
+**    GitHub:     https://github.com/cojohen
+**
+** 
+***********************************************************/
+
+#myGrid {
+    border: solid 1px #000;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0;
+}
+    #myGrid div {
+        border: solid 1px black;
+    }
+
+@media screen and (max-width: 720px) {
+    #myGrid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 360px) {
+    #myGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
